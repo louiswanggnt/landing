@@ -11,9 +11,9 @@ const Entrepreneurship: React.FC = () => {
     },
     {
       icon: <Megaphone size={40} className="text-neon-cyan" />,
-      title: "廣告投放資源",
+      title: "策略合作",
       subtitle: "Marketing Support",
-      desc: "不懂行銷沒關係。我們協助引流。"
+      desc: "平台準備中"
     },
     {
       icon: <GraduationCap size={40} className="text-amber-400" />,
@@ -87,7 +87,7 @@ const Entrepreneurship: React.FC = () => {
         {/* Bottom Callout */}
         <div className="mt-16 p-8 rounded-3xl bg-gradient-to-r from-midnight-900 to-midnight-800 border border-slate-700 relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="relative z-10">
-                <h4 className="text-2xl font-bold text-white mb-2">尋找下一個合夥人</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">尋找優秀合夥人</h4>
                 <p className="text-slate-400">您準備好接受挑戰，成為我們重點培育的對象了嗎？</p>
             </div>
             

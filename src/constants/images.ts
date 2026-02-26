@@ -3,11 +3,11 @@ export const IMAGES = {
     bg: "https://i.postimg.cc/K8N9J4NN/Gemini-Generated-Image-dv2r7hdv2r7hdv2r.png",
   },
   instructors: {
-    tang: "/src/images/05instructors/tang.png",
-    wang: "/src/images/05instructors/wang.png",
-    ma: "/src/images/05instructors/ma.png",
-    new1: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop",
-    new2: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop",
+    tang: "/images/05instructors/tang.png",
+    wang: "/images/05instructors/wang.png",
+    ma: "/images/05instructors/ma.png",
+    new1: "/images/05instructors/new1.jpg",
+    new2: "/images/05instructors/new2.jpg",
   },
   solution: {
     // Carousel images
@@ -17,8 +17,8 @@ export const IMAGES = {
   },
   sponsors: {
     tna: "https://via.placeholder.com/150?text=TNA+LOGO",
-    gnt: "/src/images/11sponsor/gnt.png",
-    bohui: "/src/images/11sponsor/bohui.png",
+    gnt: "/images/11sponsor/gnt.png",
+    bohui: "/images/11sponsor/bohui.png",
     qrPlaceholder: "https://via.placeholder.com/150?text=QR+CODE",
   }
 };
