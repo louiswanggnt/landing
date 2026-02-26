@@ -33,15 +33,16 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ onRegister }) => {
           <div className="flex flex-col md:flex-row justify-center gap-8 mb-10 text-slate-300">
             <div className="flex items-center justify-center gap-2">
               <Calendar className="text-amber-400" size={20} />
-              <span>開課日期：2026/02/01 (週日)</span>
+              <span>開課日期：2026/04/04-05 (六、日)<br />2026/04/12 (日)</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <Clock className="text-amber-400" size={20} />
-              <span>時間：13:00 - 17:00</span>
+              <span>時間：08:00 - 17:00</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <MapPin className="text-amber-400" size={20} />
-              <span>地點：台北市信義區科技培訓中心</span>
+              <span>地點：TNA中華民國指甲彩繪美容職業工會聯合會</span>
+              
             </div>
           </div>
 

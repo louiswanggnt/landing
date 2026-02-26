@@ -4,17 +4,17 @@ const Syllabus: React.FC = () => {
   const highlights = [
     {
       title: "AI 智能分析儀",
-      desc: "學習解讀深層皮膚數據，用數據精準定義護理方向。",
+      desc: "學習解讀深層皮膚數據，用數據精準定義護理方向與進度。",
       bgImage: "https://images.unsplash.com/photo-1576091160550-2173dad99901?q=80&w=2070&auto=format&fit=crop"
     },
     {
       title: "皮膚與肌肉結構",
-      desc: "重新認識表皮至真皮層的運作機制、與筋膜按摩的真實理論。",
+      desc: "重新認識表皮至真皮層的運作機制、與問題肌膚的解決方案。",
       bgImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?q=80&w=2061&auto=format&fit=crop"
     },
     {
       title: "無創導入",
-      desc: "電穿孔、超聲波、霧化、離子導入的理論，及實作課程。",
+      desc: "電漿、超聲波、霧化、離子導入的理論，及實作課程。",
       bgImage: "https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=2072&auto=format&fit=crop"
     },
     {
@@ -24,7 +24,7 @@ const Syllabus: React.FC = () => {
     },
     {
       title: "API 有效成分",
-      desc: "剖析現代活性成分，拒絕盲目跟風品牌廣告。",
+      desc: "剖析現代活性成分，有效解決問題，開創口碑技能。",
       bgImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
     },
     {
@@ -35,9 +35,9 @@ const Syllabus: React.FC = () => {
   ];
 
   const schedule = [
-    { week: "DAY 0 線上課程", title: "(學)各單元基本知識", date: "8hr " },
-    { week: "DAY 1", title: "(術)皮膚結構、AI 檢測分析、API科學活性成分", date: "8hr 3/21" },
-    { week: "DAY 2", title: "(術)無創導入儀、無創美容儀", date: "8hr 3/22" },
+    { week: "DAY 1", title: "(學)各單元基本知識", date: "4/04 (六) 8hr " },
+    { week: "DAY 2", title: "(術)皮膚結構、AI 檢測分析、API科學活性成分", date: "4/05 (日) 8hr" },
+    { week: "DAY 3", title: "(術)無創導入儀、無創美容儀", date: "4/12 (日) 8hr" },
   ];
 
   return (

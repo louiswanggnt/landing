@@ -7,7 +7,7 @@ const FAQ: React.FC = () => {
   const faqs = [
     {
       question: "報名資格有限制嗎？",
-      answer: "本課程適合所有對科技美容有興趣的人士。無論您是現職美容師希望轉型，或是零經驗想創業的初學者，我們的教學都能讓您快速上手。"
+      answer: "本課程適合所有對科技美容有興趣的人士<br />無論您是老師、美容從業人員<br />或是想創業的初學者<br/ >我們的教學都能讓您快速上手。"
     },
     {
       question: "如何報名？",
@@ -66,8 +66,7 @@ const FAQ: React.FC = () => {
                   openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="p-6 pt-0 text-slate-400 leading-relaxed border-t border-slate-800/50">
-                  {faq.answer}
+                <div className="p-6 pt-0 text-slate-400 leading-relaxed border-t border-slate-800/50" dangerouslySetInnerHTML={{ __html: faq.answer }}>
                 </div>
               </div>
             </div>

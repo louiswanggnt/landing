@@ -35,31 +35,31 @@ const Comparison: React.FC = () => {
 
             {/* Content Layer with semi-transparent mask */}
             <div className="relative z-10 p-8 md:p-10 h-full flex flex-col">
-              <h3 className="text-xl font-bold text-slate-100 mb-8 text-center tracking-wider border-b border-white/20 pb-4 drop-shadow-lg">傳統美容模式</h3>
+              <h3 className="text-xl font-bold text-slate-100 mb-8 text-center tracking-wider border-b border-white/20 pb-4 drop-shadow-lg">傳統模式</h3>
               
               <div className="space-y-10 flex-grow">
                 <div className="text-center group-hover:translate-y-[-4px] transition-transform">
                   <div className="text-red-900/40 bg-red-950/80 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-900/40 backdrop-blur-sm">
                       <X size={28} className="text-red-500" />
                   </div>
-                  <h4 className="text-white font-bold mb-2 drop-shadow-md">盲從聽廠商吹噓</h4>
-                  <p className="text-slate-100 text-sm leading-relaxed max-w-xs mx-auto drop-shadow-md">缺乏判斷力，購入低規無效儀器，淪為囤貨孤兒，售後無門。</p>
+                  <h4 className="text-white font-bold mb-2 drop-shadow-md">產品選購</h4>
+                  <p className="text-slate-100 text-sm leading-relaxed max-w-xs mx-auto drop-shadow-md">原理不清楚,訊息判斷困難。</p>
                 </div>
 
                 <div className="text-center group-hover:translate-y-[-4px] transition-transform delay-75">
                   <div className="text-red-900/40 bg-red-950/80 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-900/40 backdrop-blur-sm">
                       <X size={28} className="text-red-500" />
                   </div>
-                  <h4 className="text-white font-bold mb-2 drop-shadow-md">紙本手寫記錄</h4>
-                  <p className="text-slate-100 text-sm leading-relaxed max-w-xs mx-auto drop-shadow-md">客戶資料混亂難尋，難以追蹤膚況演變與成效，容易流失高價值客群。</p>
+                  <h4 className="text-white font-bold mb-2 drop-shadow-md">顧客服務記錄</h4>
+                  <p className="text-slate-100 text-sm leading-relaxed max-w-xs mx-auto drop-shadow-md">紙本紀錄統計分析不易</p>
                 </div>
 
                 <div className="text-center group-hover:translate-y-[-4px] transition-transform delay-150">
                   <div className="text-red-900/40 bg-red-950/80 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-900/40 backdrop-blur-sm">
                       <X size={28} className="text-red-500" />
                   </div>
-                  <h4 className="text-white font-bold mb-2 drop-shadow-md">一整天疲累的雙手</h4>
-                  <p className="text-slate-100 text-sm leading-relaxed max-w-xs mx-auto drop-shadow-md">純手技操作使體力透支且效率低，無法服務更多客人，業績觸及天花板。</p>
+                  <h4 className="text-white font-bold mb-2 drop-shadow-md">著重手技</h4>
+                  <p className="text-slate-100 text-sm leading-relaxed max-w-xs mx-auto drop-shadow-md">體力透支快、造成身體老損</p>
                 </div>
               </div>
             </div>

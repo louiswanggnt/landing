@@ -21,7 +21,7 @@ const PainPoints: React.FC = () => {
       id: 3,
       icon: <TrendingUp size={36} className="text-neon-cyan" />,
       title: "API科學活性成分",
-      desc: "市場流行什麼就跟風買什麼？ 看穿廠商話術，自行搭配最佳組合。",
+      desc: "善用合法有效成分,滿足客戶需求,解決問題痛點",
       bgImage: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop",
       highlight: true
     }

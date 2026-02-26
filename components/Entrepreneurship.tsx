@@ -5,21 +5,21 @@ const Entrepreneurship: React.FC = () => {
   const features = [
     {
       icon: <Rocket size={40} className="text-amber-400" />,
-      title: "輔導創業",
+      title: "創業輔導",
       subtitle: "Business Incubation",
-      desc: "針對優秀學員，我們提供界的機會輔導。共創雙贏。"
+      desc: "針對優秀創業學員，我們提供資源輔導。共創雙贏。"
     },
     {
       icon: <Megaphone size={40} className="text-neon-cyan" />,
       title: "廣告投放資源",
       subtitle: "Marketing Support",
-      desc: "不懂行銷？沒關係。我們會為何作者投放廣告，串聯。"
+      desc: "不懂行銷沒關係。我們協助引流。"
     },
     {
       icon: <GraduationCap size={40} className="text-amber-400" />,
       title: "培育種子教師",
       subtitle: "Seed Instructor",
-      desc: "對儀器使用、講解表現優異者，可簽約成為品牌種子講師。透過教學獲得額外被動收入，建立個人專業品牌形象。"
+      desc: "經考核優異學員,可成為種子講師,服務學員"
     }
   ];
 
@@ -43,14 +43,14 @@ const Entrepreneurship: React.FC = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-bold tracking-wider mb-4">
             <TrendingUp size={16} />
-            <span>菁英人才投資計畫</span>
+            <span>菁英人才培育計畫</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            我們投資的不只是設備<br />
-            <span className="text-gradient-gold">更是您的未來</span>
+            我們培訓的不只是技能<br />
+            <span className="text-gradient-gold">還有您的未來</span>
           </h2>
           <p className="text-slate-300 max-w-2xl mx-auto text-lg">
-            針對修畢課程的優秀人才，我們提供全方位的投資機會。
+            針對修畢課程的優秀人才，我們提供多方位的發展機會。
             <br className="hidden md:block" />
             這不只是一堂課，而是您事業起飛的加速器。
           </p>

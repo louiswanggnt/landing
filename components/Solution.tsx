@@ -94,22 +94,26 @@ const Solution: React.FC = () => {
                 什麼是 <span className="text-gradient-gold">無創與科技美容</span>？
               </h3>
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                不依賴有風險的侵入式療程，利用AI智能分析、無創導入、無創保養等高科技，
-                實現"高效、無創、有感"的護膚體驗。重塑服務價值。
+                無侵入的療程設備,搭配AI智能分析<br/ >
+                以無創導入技術將有效成分漸進滲透保養<br/ >
+                實現"高效、無創、有感"的護膚體驗<br/ >
+                重塑服務價值。
               </p>
             </div>
 
             <div className="space-y-4">
               {[
-                "AI 智能：數據化分析頭皮、臉皮。設計精準客製療程，自動記錄",
-                "API活性成分：業界最新的化妝保養成分，從源頭改善",
-                "無創導入：無創突破角質層屏障，大幅提升產品吸收",
-                "無創保養：安全高效，改善肌膚健康"
+                "AI 智能：數據化分析頭皮、臉皮。設計精準客製療程，自動記錄、管理",
+                "API活性成分：運用最新合法科學實證保養成分,對症下藥解決問題",
+                "無創導入：無創無痛突破角質屏障,高效提升產品吸收,有效解決深層問題",
+                "科技保養：如何善用光、電、熱、磁、聲刺激療法,改善肌膚健康"
             
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3 group">
                   <CheckCircle2 className="text-neon-cyan mt-1 shrink-0 group-hover:text-white transition-colors" size={20} />
-                  <span className="text-slate-300 group-hover:text-neon-cyan transition-colors">{item}</span>
+                  <span className="text-slate-300 group-hover:text-neon-cyan transition-colors">
+                    {item.split('：').map((part, i) => i === 0 ? <strong key={i} className="text-lg">{part}</strong> : <span key={i}>：{part}</span>)}
+                  </span>
                 </div>
               ))}
             </div>

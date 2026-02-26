@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
         <div className="max-w-4xl space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-neon-cyan/10 border border-neon-cyan/30 text-neon-cyan text-sm font-medium tracking-wider mb-2 shadow-[0_0_10px_rgba(0,240,255,0.1)]">
               <Sparkles size={16} />
-              <span>2026 趨勢搶先看</span>
+              <span>美容科技趨勢</span>
             </div>
             
             <div className="space-y-4">
@@ -49,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
               </h1>
               
               <p className="text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed font-light">
-                掌握未來美容產業的核心競爭力，結合人工智能與頂尖儀器，打造無可取代的專業護理體驗。
+                掌握未來美容產業的核心競爭力<br />結合人工智能與頂尖儀器<br />打造無可取代的專業護理技能。
               </p>
             </div>
 
@@ -61,7 +61,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-slate-500 text-xs font-mono uppercase tracking-wider">開課日期</span>
-                  <span className="text-white font-medium">2026/03/21、22 (週日)</span>
+                  <span className="text-white font-medium">2026/04/04-05 (六、日)<br />2026/04/12 (日)</span>
                 </div>
               </div>
               
@@ -71,7 +71,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-slate-500 text-xs font-mono uppercase tracking-wider">上課時間</span>
-                  <span className="text-white font-medium">09:00 - 18:00</span>
+                  <span className="text-white font-medium">08:00 - 17:00</span>
                 </div>
               </div>
 
@@ -103,10 +103,6 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-neon-cyan shadow-[0_0_8px_#00f0ff] animate-pulse"></div>
                 <span className="text-neon-cyan/80">名額剩餘 30 位</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24]"></div>
-                <span className="text-amber-400/80">首堂優惠倒數中</span>
               </div>
             </div>
           </div>

@@ -6,34 +6,34 @@ import { IMAGES } from '../src/constants/images';
 const Sponsors: React.FC = () => {
   const sponsors = [
     {
-      name: "TNA美甲工會",
+      name: "主辦: TNA美甲協會",
       enName: "TNail",
       logoUrl: IMAGES.sponsors.tna,
-      desc: "頂尖光電美容儀器代理與研發，提供最高規格的設備支持。",
+      desc: "中華民國指甲彩繪美容職業工會聯合會。",
       color: "border-neon-cyan text-neon-cyan",
       btnVariant: "outline" as const,
       qrUrl: IMAGES.sponsors.qrPlaceholder,
-      websiteUrl: "#", 
+      websiteUrl: "https://tnail.com.tw/", 
     },
     {
-      name: "GNT京華堂",
+      name: "協辦:GNT京華堂",
       enName: "Gold Nano Tech",
       logoUrl: IMAGES.sponsors.gnt,
       desc: "專注於無創霧化導入儀，以科技驅動美麗。",
       color: "border-amber-400 text-amber-400",
       btnVariant: "amber" as const,
       qrUrl: IMAGES.sponsors.qrPlaceholder,
-      websiteUrl: "#", 
+      websiteUrl: "http://www.gnt.com.tw/chinese/explore/detail.php?pid=12", 
     },
     {
-      name: "BOHUI博惠生技",
+      name: "協辦: BOHUI博惠生技",
       enName: "BO HUI BIOTECH",
       logoUrl: IMAGES.sponsors.bohui,
       desc: "頂尖外泌體與幹細胞公司。",
       color: "border-neon-cobalt text-neon-cobalt",
       btnVariant: "outline" as const,
       qrUrl: IMAGES.sponsors.qrPlaceholder,
-      websiteUrl: "#", 
+      websiteUrl: "https://giccmedical.com/", 
     }
   ];
 
