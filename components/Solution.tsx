@@ -1,7 +1,31 @@
-import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
+import { IMAGES } from '../src/constants/images';
 
 const Solution: React.FC = () => {
+  const images = [
+    IMAGES.solution.slide1,
+    IMAGES.solution.slide2,
+    IMAGES.solution.slide3
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
     <section className="py-24 bg-gradient-to-b from-midnight-950 to-midnight-900 overflow-hidden relative border-t border-slate-800/50">
       {/* Section Marker */}
@@ -12,15 +36,49 @@ const Solution: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
-          <div className="lg:w-1/2 relative">
+          <div className="lg:w-1/2 relative group">
              <div className="absolute -top-10 -left-10 w-40 h-40 bg-neon-cyan/10 rounded-full blur-3xl"></div>
-             <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-neon-cyan/5">
-               <img 
-                 src="https://i.postimg.cc/qMgn9q4y/T6-qiang-ti-tou-shi.jpg" 
-                 alt="High Tech Beauty Treatment" 
-                 className="w-full h-auto object-cover opacity-90 mix-blend-lighten grayscale hover:grayscale-0 transition-all duration-700"
-               />
-               <div className="absolute inset-0 bg-midnight-950/20"></div>
+             
+             {/* Carousel Container */}
+             <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-neon-cyan/5 aspect-[4/3]">
+               {images.map((img, index) => (
+                 <div 
+                    key={index}
+                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+                 >
+                   <img 
+                     src={img} 
+                     alt={`High Tech Beauty Treatment ${index + 1}`} 
+                     className="w-full h-full object-cover opacity-90 mix-blend-lighten grayscale hover:grayscale-0 transition-all duration-700"
+                   />
+                   <div className="absolute inset-0 bg-midnight-950/20"></div>
+                 </div>
+               ))}
+               
+               {/* Navigation Buttons */}
+               <button 
+                 onClick={prevSlide}
+                 className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-neon-cyan/20 hover:text-neon-cyan transition-colors backdrop-blur-sm opacity-0 group-hover:opacity-100 duration-300"
+               >
+                 <ChevronLeft size={24} />
+               </button>
+               <button 
+                 onClick={nextSlide}
+                 className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-neon-cyan/20 hover:text-neon-cyan transition-colors backdrop-blur-sm opacity-0 group-hover:opacity-100 duration-300"
+               >
+                 <ChevronRight size={24} />
+               </button>
+
+               {/* Dots */}
+               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                 {images.map((_, idx) => (
+                   <button
+                     key={idx}
+                     onClick={() => setCurrentSlide(idx)}
+                     className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === currentSlide ? 'bg-neon-cyan w-6' : 'bg-white/30 hover:bg-white/50'}`}
+                   />
+                 ))}
+               </div>
              </div>
              
              {/* Decorative Elements */}

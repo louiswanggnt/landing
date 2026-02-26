@@ -1,38 +1,39 @@
 import React from 'react';
 import Button from './Button';
 import { Globe } from 'lucide-react';
+import { IMAGES } from '../src/constants/images';
 
 const Sponsors: React.FC = () => {
   const sponsors = [
     {
       name: "TNA美甲工會",
       enName: "TNail",
-      logoUrl: "https://via.placeholder.com/150?text=TNA+LOGO", // 請在此處填入指定的圖片 URL
+      logoUrl: IMAGES.sponsors.tna,
       desc: "頂尖光電美容儀器代理與研發，提供最高規格的設備支持。",
       color: "border-neon-cyan text-neon-cyan",
       btnVariant: "outline" as const,
-      qrUrl: "https://via.placeholder.com/150?text=QR+CODE", // 請在此處填入 QR Code 圖片 URL
-      websiteUrl: "#", // 請在此處填入指定網頁 URL
+      qrUrl: IMAGES.sponsors.qrPlaceholder,
+      websiteUrl: "#", 
     },
     {
       name: "GNT京華堂",
       enName: "Gold Nano Tech",
-      logoUrl: "https://i.postimg.cc/N0kr9mdK/images-(3).jpg", // 請在此處填入指定的圖片 URL
+      logoUrl: IMAGES.sponsors.gnt,
       desc: "專注於無創霧化導入儀，以科技驅動美麗。",
       color: "border-amber-400 text-amber-400",
       btnVariant: "amber" as const,
-      qrUrl: "https://via.placeholder.com/150?text=QR+CODE", // 請在此處填入 QR Code 圖片 URL
-      websiteUrl: "#", // 請在此處填入指定網頁 URL
+      qrUrl: IMAGES.sponsors.qrPlaceholder,
+      websiteUrl: "#", 
     },
     {
       name: "BOHUI博惠生技",
       enName: "BO HUI BIOTECH",
-      logoUrl: "https://i.postimg.cc/5NWH9Htd/logo.png", // 請在此處填入指定的圖片 URL
+      logoUrl: IMAGES.sponsors.bohui,
       desc: "頂尖外泌體與幹細胞公司。",
       color: "border-neon-cobalt text-neon-cobalt",
       btnVariant: "outline" as const,
-      qrUrl: "https://via.placeholder.com/150?text=QR+CODE", // 請在此處填入 QR Code 圖片 URL
-      websiteUrl: "#", // 請在此處填入指定網頁 URL
+      qrUrl: IMAGES.sponsors.qrPlaceholder,
+      websiteUrl: "#", 
     }
   ];
 

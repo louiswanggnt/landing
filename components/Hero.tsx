@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import { ArrowRight, Sparkles, Calendar, Clock, MapPin } from 'lucide-react';
+import { IMAGES } from '../src/constants/images';
 
 interface HeroProps {
   onRegister: () => void;
@@ -17,7 +18,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
       {/* Full Page Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://i.postimg.cc/K8N9J4NN/Gemini-Generated-Image-dv2r7hdv2r7hdv2r.png" 
+          src={IMAGES.hero.bg} 
           alt="Professional Instructor Background" 
           className="w-full h-full object-cover object-top opacity-100" 
         />
