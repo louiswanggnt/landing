@@ -10,71 +10,130 @@ interface InstructorData {
   desc: string;
   fullBio: string;
   experiences: string[];
+  secondaryTitle: string;
+  publications: string[];
 }
 
 const Instructor: React.FC = () => {
   const instructors: InstructorData[] = [
     {
-      name: "唐上文",
-      title: "董事長",
-      specialty: "京華堂 董事長",
-      image: IMAGES.instructors.tang,
-      desc: " 。",
-      fullBio: " 。",
+      name: "戴念梓",
+      title: "臨床教師",
+      specialty: "醫師",
+      image: IMAGES.instructors.dai,
+      desc: "擁有 15 年臨床經驗，專精於問題肌膚的數據化分析與光電療程規劃。",
+      fullBio: "國防醫學院醫學系臨床教授，具有多年實務與專業經驗。",
       experiences: [
-        "奈米技術",
-        "無創美容儀器研發",
+        "國防醫學院醫學系臨床教授",
+        "三軍總醫院外科部部主任",
+        "台灣燒傷暨傷口照護學會理事長",
+      ],
+      secondaryTitle: "學經歷",
+      publications: [
+        "國防醫學院 醫學士",
+        "英國艾士頓大學健康與生命科學院藥學 博士",
+        "三軍總醫院整形外科住院醫師、總醫師、主治醫師",
+        "中華民國外科專科醫師",
+        "中華民國整形外科專科醫師",
+        "手外科專科醫師",
+        "三軍總醫院整形外科主治醫師燒傷中心主任",
+        "台灣燒傷暨傷口照護學會第十一屆常務理事 ‧ 會員",
+        "中華民國教育部部定副教授"
       ]
     },
+
     {
       name: "王惠欣",
-      title: "高階美容導師",
+      title: "美容與美學設計教育專家",
       specialty: "美學 碩士",
       image: IMAGES.instructors.wang,
       desc: "。",
-      fullBio: "。",
+      fullBio: "結合產學資深背景與設計思維，專精美容教育與美學系統建構。著有多本彩妝造型專書及能力本位教材，致力於將美容從技術操作提升為理論支撐的專業學科。以科學解析皮膚機制，以美學重塑技術價值，培養兼具專業判斷力與產業競爭力的新世代美容專業人才。",
       experiences: [
-        "美學",
-        "皮膚結構學",
+        "小雅、瑪格麗特婚紗攝影造型師",
+        "中華文化社會福利事業基金會附設職業訓練中心職訓師",
+        "安婕妤化妝品公司教學部副主任",
+        "稻江護家美容科主任",
+        "德育護理健康學院美容流行設計系專任講師",
+      ],
+      secondaryTitle: "著作",
+      publications: [
+        "《創意彩妝造型設計》 全華出版",
+        "《新娘秘書-時尚新娘造型設計》 全華出版",
+        "《職訓局能力本位教材 –美體》",
+        "《職訓局能力本位教材 –推脂按摩》"
       ]
     },
     {
       name: "馬天祥",
-      title: "博士",
-      specialty: "生物醫學 博士",
+      title: "關鍵禾芯精準醫療部生醫總監",
+      specialty: "博士",
       image: IMAGES.instructors.ma,
-      desc: "  ",
-      fullBio: " ",
+      desc: "。",
+      fullBio: "長期深耕學術與產業界，熟悉雙方運作與需求，能有效串聯研究與實務。專長於醫療器材臨床試驗設計與取證策略，協助企業加速產品開發與上市；並運用生物醫學專業，研發具實證基礎且有效的美容保養品配方，推動科學化保養的普及。  ",
       experiences: [
-        "分子醫學",
-        "基因槍技術",
-        "細胞轉殖",
-        "臨床試驗相關技能"
+        "康博醫創 資深科學家",
+        "康健基因 資深產品開發研究員",
+        "長庚價創 產品部經理",
+        "晉加CRO 臨床試驗專員"
+      ],
+      secondaryTitle: "專長",
+      publications: [
+        "醫療器材開發",
+        "藥品/醫材臨床試驗",
+        "基因轉殖",
+        "發育生物學"
       ]
     },
+        {
+      name: "唐上文",
+      title: "無創導入/奈米科技",
+      specialty: "董事長",
+      image: IMAGES.instructors.tang,
+      desc: "。",
+      fullBio: "多年產品研發與上市經驗。",
+      experiences: [
+        "京華堂實業股份有限公司 創辦人",
+        "生醫級奈米金製程管理規劃與醫學運用",
+        "無創導入技術開發與應用",
+  
+      ],
+      secondaryTitle: "相關著作/研究",
+      publications: [
+        "2003《黃金的妙用》",
+        "食用金箔許可證"
+      ]
+    },
+
     {
+      name: "顏尚彬",
+      title: "美容輔導講師",
+      specialty: "品牌經營",
+      image: IMAGES.instructors.frank,
+      desc: "",
+      fullBio: "容師",
+      experiences: [
+        "京華堂 金牌業務",
+        "無創導入儀器操作與維修培訓",
+      ],
+      secondaryTitle: " ",
+      publications: []
+    },
+        {
       name: "汪冠霖",
-      title: "講師",
+      title: "美容輔導講師",
       specialty: "生物物理 碩士",
-      image: IMAGES.instructors.new1,
-      desc: "  ",
-      fullBio: " ",
+      image: IMAGES.instructors.louis,
+      desc: "",
+      fullBio: "專業的物理學知識、美容儀器操作及基本原理",
       experiences: [
-        "美容儀器原理",
-        "",
-      ]
-    },
-    {
-      name: "FRANK",
-      title: "講師",
-      specialty: "行銷專員",
-      image: IMAGES.instructors.new2,
-      desc: "  ",
-      fullBio: " ",
-      experiences: [
-        "美容",
-        "",
-      ]
+        "韓國美容協會認證講師",
+        "輔導超過 100 位學員創業",
+        "知名美容連鎖店 教育總監",
+        "國際美容競賽 評審長"
+      ],
+      secondaryTitle: " ",
+      publications: []
     }
   ];
 
@@ -136,15 +195,29 @@ const Instructor: React.FC = () => {
                   {instructor.fullBio}
                 </p>
 
-                <div className="mt-auto">
-                    <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">專長</h4>
-                    <div className="space-y-2">
-                        {instructor.experiences.map((exp, idx) => (
-                            <div key={idx} className="flex items-start gap-2">
-                                <Check className="text-neon-cyan mt-0.5 shrink-0" size={14} />
-                                <span className="text-slate-400 text-xs">{exp}</span>
-                            </div>
-                        ))}
+                <div className="grid grid-cols-1 gap-6 mt-auto">
+                    <div>
+                        <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">專業經歷</h4>
+                        <div className="space-y-2">
+                            {instructor.experiences.map((exp, idx) => (
+                                <div key={idx} className="flex items-start gap-2">
+                                    <Check className="text-neon-cyan mt-0.5 shrink-0" size={14} />
+                                    <span className="text-slate-400 text-xs">{exp}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">{instructor.secondaryTitle}</h4>
+                        <div className="space-y-2">
+                            {instructor.publications.map((pub, idx) => (
+                                <div key={idx} className="flex items-start gap-2">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 shrink-0"></div>
+                                    <span className="text-slate-400 text-xs italic">{pub}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
               </div>

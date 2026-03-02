@@ -49,7 +49,7 @@ const Solution: React.FC = () => {
                    <img 
                      src={img} 
                      alt={`High Tech Beauty Treatment ${index + 1}`} 
-                     className="w-full h-full object-cover opacity-90 mix-blend-lighten grayscale hover:grayscale-0 transition-all duration-700"
+                     className="w-full h-full object-cover transition-all duration-700"
                    />
                    <div className="absolute inset-0 bg-midnight-950/20"></div>
                  </div>
@@ -103,7 +103,7 @@ const Solution: React.FC = () => {
 
             <div className="space-y-4">
               {[
-                "AI 智能：數據化分析頭皮、臉皮。設計精準客製療程，自動記錄、管理",
+                "智能分析：數據化分析頭皮、臉皮。設計精準客製療程，自動記錄、管理",
                 "API活性成分：運用最新合法科學實證保養成分,對症下藥解決問題",
                 "無創導入：無創無痛突破角質屏障,高效提升產品吸收,有效解決深層問題",
                 "科技保養：如何善用光、電、熱、磁、聲刺激療法,改善肌膚健康"

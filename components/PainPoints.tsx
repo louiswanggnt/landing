@@ -1,30 +1,40 @@
 import React from 'react';
 import { AlertTriangle, Cpu, TrendingUp } from 'lucide-react';
+import { IMAGES } from '../src/constants/images';
 
 const PainPoints: React.FC = () => {
   const points = [
     {
       id: 1,
       icon: <Cpu size={36} className="text-neon-cyan" />,
-      title: "精準分析",
+      title: "問題分析",
       desc: "告別推銷。讓圖表替你觀察說話，直擊客戶心底，讓成交變得理所當然。",
       bgImage: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop",
     },
-    {
+        {
       id: 2,
-      icon: <AlertTriangle size={36} className="text-amber-400" />,
-      title: "類醫美護理",
-      desc: "解放雙手。駕馭光電熱磁聲，讓設備轉換成業績與聲譽",
-      bgImage: "https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=2073&auto=format&fit=crop",
-    },
-    {
-      id: 3,
       icon: <TrendingUp size={36} className="text-neon-cyan" />,
       title: "API科學活性成分",
       desc: "善用合法有效成分,滿足客戶需求,解決問題痛點",
       bgImage: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop",
       highlight: true
+    },
+     {
+      id: 3,
+      icon: <AlertTriangle size={36} className="text-amber-400" />,
+      title: "無創導入",
+      desc: "無痛精準高效導入，讓化妝品釋放100%的潛能",
+      bgImage: IMAGES.solution.slide3,
+    },
+    {
+      id: 4,
+      icon: <AlertTriangle size={36} className="text-amber-400" />,
+      title: "類醫美護理",
+      desc: "解放雙手。駕馭光電熱磁聲，讓設備轉換成業績與聲譽",
+      bgImage: "https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=2073&auto=format&fit=crop",
     }
+
+
   ];
 
   return (

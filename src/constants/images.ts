@@ -3,17 +3,18 @@ export const IMAGES = {
     bg: "https://i.postimg.cc/K8N9J4NN/Gemini-Generated-Image-dv2r7hdv2r7hdv2r.png",
   },
   instructors: {
+    dai: "/images/05instructors/dai.jpg",
     tang: "/images/05instructors/tang.png",
-    wang: "/images/05instructors/wang.png",
+    wang: "/images/05instructors/wang.jpg",
     ma: "/images/05instructors/ma.png",
-    new1: "/images/05instructors/new1.jpg",
-    new2: "/images/05instructors/new2.jpg",
+    louis: "/images/05instructors/louis.jpg",
+    frank: "/images/05instructors/frank.jpg",
   },
   solution: {
     // Carousel images
-    slide1: "https://i.postimg.cc/qMgn9q4y/T6-qiang-ti-tou-shi.jpg",
-    slide2: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop",
-    slide3: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop",
+    slide1: "/images/03solution/nanogold.png",
+    slide2: "/images/03solution/t6.jpg",
+    slide3: "/images/03solution/t6.jpg",
   },
   sponsors: {
     tna: "https://via.placeholder.com/150?text=TNA+LOGO",

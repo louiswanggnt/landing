@@ -3,7 +3,7 @@ import React from 'react';
 const Syllabus: React.FC = () => {
   const highlights = [
     {
-      title: "AI 智能分析儀",
+      title: "智能分析",
       desc: "學習解讀深層皮膚數據，用數據精準定義護理方向與進度。",
       bgImage: "https://images.unsplash.com/photo-1576091160550-2173dad99901?q=80&w=2070&auto=format&fit=crop"
     },
