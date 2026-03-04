@@ -6,7 +6,9 @@ const Solution: React.FC = () => {
   const images = [
     IMAGES.solution.slide1,
     IMAGES.solution.slide2,
-    IMAGES.solution.slide3
+    IMAGES.solution.slide3,
+    IMAGES.solution.slide4,
+    IMAGES.solution.slide5
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

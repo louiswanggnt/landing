@@ -9,14 +9,14 @@ const PainPoints: React.FC = () => {
       icon: <Cpu size={36} className="text-neon-cyan" />,
       title: "問題分析",
       desc: "告別推銷。讓圖表替你觀察說話，直擊客戶心底，讓成交變得理所當然。",
-      bgImage: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop",
+      bgImage: IMAGES.pain.analyze,
     },
         {
       id: 2,
       icon: <TrendingUp size={36} className="text-neon-cyan" />,
       title: "API科學活性成分",
       desc: "善用合法有效成分,滿足客戶需求,解決問題痛點",
-      bgImage: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop",
+      bgImage: IMAGES.pain.API,
       highlight: true
     },
      {
@@ -24,7 +24,7 @@ const PainPoints: React.FC = () => {
       icon: <AlertTriangle size={36} className="text-amber-400" />,
       title: "無創導入",
       desc: "無痛精準高效導入，讓化妝品釋放100%的潛能",
-      bgImage: IMAGES.solution.slide3,
+      bgImage: IMAGES.solution.slide2,
     },
     {
       id: 4,
