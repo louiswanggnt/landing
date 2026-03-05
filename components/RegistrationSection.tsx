@@ -13,8 +13,9 @@ const RegistrationSection: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  // ★★★ 請將下方的網址替換成您部署後的 Google Apps Script 網址 ★★★
-  const GOOGLE_SCRIPT_URL = "您的_GOOGLE_SCRIPT_URL_填在這裡";
+  // 使用環境變數設定 API 接口與 Google 表單網址
+  const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || "";
+  const GOOGLE_FORM_URL = import.meta.env.VITE_GOOGLE_FORM_URL || "";
 
   const qualificationOptions = [
     { id: 'teacher', label: '學校老師' },
@@ -43,16 +44,16 @@ const RegistrationSection: React.FC = () => {
     setErrorMsg('');
 
     try {
-      if (GOOGLE_SCRIPT_URL === "您的_GOOGLE_SCRIPT_URL_填在這裡") {
+      if (!API_ENDPOINT || API_ENDPOINT.includes("您的_API_網址")) {
         // 模擬模式 (尚未設定 URL 時)
-        console.warn("尚未設定 Google Script URL，僅執行模擬送出");
+        console.warn("尚未設定 API 網址，僅執行模擬送出");
         await new Promise(resolve => setTimeout(resolve, 1500));
         console.log('Form Data:', formData);
         setSubmitted(true);
       } else {
         // 真實送出模式
         // 使用 no-cors 模式以避開 Google 的 CORS 限制，雖然無法讀取回應，但資料會成功送達
-        await fetch(GOOGLE_SCRIPT_URL, {
+        await fetch(API_ENDPOINT, {
             method: "POST",
             mode: "no-cors", 
             headers: {
@@ -75,6 +76,14 @@ const RegistrationSection: React.FC = () => {
       setErrorMsg("傳送失敗，請檢查網路連線或稍後再試。");
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  const handleGoogleFormClick = () => {
+    if (GOOGLE_FORM_URL && !GOOGLE_FORM_URL.includes("您的_GOOGLE_表單網址")) {
+      window.open(GOOGLE_FORM_URL, '_blank', 'noopener,noreferrer');
+    } else {
+      alert("尚未設定 Google 表單網址，請聯繫管理員。");
     }
   };
 
@@ -218,7 +227,7 @@ const RegistrationSection: React.FC = () => {
                     </div>
                 )}
 
-                <div className="pt-6">
+                <div className="pt-6 space-y-4">
                   <Button type="submit" fullWidth variant="primary" className="flex items-center justify-center gap-2 text-lg h-14" disabled={isSubmitting}>
                     {isSubmitting ? (
                         <>
@@ -230,6 +239,24 @@ const RegistrationSection: React.FC = () => {
                         </>
                     )}
                   </Button>
+                  
+                  <div className="relative flex items-center py-2">
+                    <div className="flex-grow border-t border-slate-800"></div>
+                    <span className="flex-shrink mx-4 text-slate-600 text-xs uppercase tracking-widest">或使用其他方式</span>
+                    <div className="flex-grow border-t border-slate-800"></div>
+                  </div>
+
+                  <Button 
+                    type="button" 
+                    fullWidth 
+                    variant="outline" 
+                    className="flex items-center justify-center gap-2 text-slate-300 h-12 border-slate-700 hover:border-neon-cyan/50"
+                    onClick={handleGoogleFormClick}
+                    disabled={isSubmitting}
+                  >
+                    前往 Google 表單報名
+                  </Button>
+
                   <p className="text-center text-slate-500 text-sm mt-4">
                     提交即代表您同意本課程之服務條款與隱私權政策
                   </p>
