@@ -14,8 +14,8 @@ export const IMAGES = {
     tang: "/images/05instructors/tang.png",
     wang: "/images/05instructors/wang.jpg",
     ma: "/images/05instructors/ma.png",
-    louis: "/images/05instructors/louis.jpg",
-    frank: "/images/05instructors/frank.jpg",
+    louis: "/images/05instructors/louis.png",
+    frank: "/images/05instructors/frank.png",
   },
   solution: {
     // Carousel images

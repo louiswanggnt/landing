@@ -82,7 +82,8 @@ const Sponsors: React.FC = () => {
                 {sponsor.desc}
               </p>
 
-              {/* QR Code Image */}
+              
+              {/*  QR Code Image }
               <div className="relative w-32 h-32 bg-white p-2 rounded-lg mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden shadow-inner">
                 <img 
                   src={sponsor.qrUrl} 
@@ -92,7 +93,8 @@ const Sponsors: React.FC = () => {
                 <div className="absolute -bottom-2 -right-2 bg-[#06C755] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-md">
                     LINE
                 </div>
-              </div>
+              </div> */}
+              
 
               <Button 
                 onClick={() => handleVisitSite(sponsor.websiteUrl)}

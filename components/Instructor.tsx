@@ -103,30 +103,28 @@ const Instructor: React.FC = () => {
 
     {
       name: "顏尚彬",
-      title: "美容輔導講師",
-      specialty: "品牌經營",
+      title: "無創導入美容儀器",
+      specialty: "資深工程師",
       image: IMAGES.instructors.frank,
       desc: "",
       fullBio: "容師",
       experiences: [
+        "儀器使用經歷15年",
         "京華堂 金牌業務",
-        "無創導入儀器操作與維修培訓",
       ],
       secondaryTitle: " ",
       publications: []
     },
         {
       name: "汪冠霖",
-      title: "美容輔導講師",
-      specialty: "生物物理 碩士",
+      title: "生物物理",
+      specialty: "研發專員",
       image: IMAGES.instructors.louis,
       desc: "",
       fullBio: "專業的物理學知識、美容儀器操作及基本原理",
       experiences: [
-        "韓國美容協會認證講師",
-        "輔導超過 100 位學員創業",
-        "知名美容連鎖店 教育總監",
-        "國際美容競賽 評審長"
+        "生物物理 碩士",
+        "京華堂 產品研發專員",
       ],
       secondaryTitle: " ",
       publications: []
